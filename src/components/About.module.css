@@ -1,0 +1,41 @@
+.container {
+  background: var(--color-background);
+  color: var(--color-text-primary);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
+  padding: 48px;
+  flex: 1;
+}
+
+.container h2 {
+  font-size: var(--font-size-5xl);
+  letter-spacing: var(--letter-spacing-normal);
+  margin-bottom: 12px;
+}
+
+.container img {
+  border-radius: 12px;
+}
+
+.container p {
+  font-size: var(--font-size-base);
+  letter-spacing: var(--letter-spacing-normal);
+  line-height: var(--line-height-normal);
+  max-width: 500px;
+}
+
+.description {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+}
+
+@media (max-width: 1024px) {
+  .container h2 {
+    font-size: 36px;
+  }
+}

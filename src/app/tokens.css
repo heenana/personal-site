@@ -1,0 +1,69 @@
+/* Design Tokens - Centralized Design System Variables */
+
+:root {
+  /* ===== COLORS ===== */
+
+  /* Primary */
+  --color-primary: #2c5f6f;
+  --color-primary-hover: #234850;
+  --color-primary-dark: #1a3740;
+
+  /* Neutral Grays */
+  --color-gray-900: #000000;
+  --color-gray-700: #2c3436;
+  --color-gray-600: #4a5759;
+  --color-gray-500: #6b7678;
+  --color-gray-300: #b8c9cd;
+  --color-gray-200: #d4e1e4;
+  --color-gray-100: #e8f4f8;
+  --color-gray-50: #f5fafb;
+
+  /* Semantic Colors */
+  --color-background: #a5cbd4;
+  --color-text-primary: #000000;
+  --color-text-secondary: #4a5759;
+  --color-border: #d4e1e4;
+  --color-accent-light: #c48fa6;
+  --color-overlay: #f5e6d3;
+  --color-recipe-heading: #4a8082;
+  /* --color-accent-light: #d4a5b3; */
+
+  /* ===== TYPOGRAPHY ===== */
+
+  /* Font Sizes - Mobile First */
+  --font-size-xs: 12px;
+  --font-size-sm: 14px;
+  --font-size-base: 16px;
+  --font-size-lg: 18px;
+  --font-size-xl: 20px;
+  --font-size-2xl: 24px;
+  --font-size-3xl: 32px;
+  --font-size-4xl: 42px;
+  --font-size-5xl: 50px;
+
+  /* Font Weights */
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* ===== SPACING ===== */
+
+  /* Letter Spacing */
+  --letter-spacing-tight: 0.04em;
+  --letter-spacing-normal: 0.08em;
+
+  /* Line Heights */
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.6;
+  --line-height-loose: 1.8;
+
+  /* ===== EFFECTS ===== */
+
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+
+  /* Opacity */
+  --opacity-hover: 0.95;
+}
