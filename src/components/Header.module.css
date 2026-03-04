@@ -1,52 +1,19 @@
 /* Mobile-first base styles */
 .header {
+  background-color: var(--color-background-elevated);
+  border-bottom: 1px solid var(--color-border);
   position: sticky;
   top: 0;
   width: 100%;
-  background-color: rgba(255, 255, 255, var(--opacity-hover));
-  border-bottom: 1px solid var(--color-border);
   z-index: 1000;
 }
 
 .container {
-  padding: 10px 16px;
+  align-items: center;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-}
-
-.container nav {
-  display: flex;
-  gap: 12px;
-  align-items: center;
-}
-
-.container nav a {
-  color: var(--color-text-secondary);
-  text-decoration: none;
-  font-weight: var(--font-weight-medium);
-  font-size: var(--font-size-sm);
-  transition: color var(--transition-fast);
+  padding: 10px 16px;
   position: relative;
-}
-
-.container nav a:hover {
-  color: var(--color-text-primary);
-}
-
-.container nav a::after {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 2px;
-  bottom: -4px;
-  left: 0;
-  background-color: var(--color-primary);
-  transition: width var(--transition-normal);
-}
-
-.container nav a:hover::after {
-  width: 100%;
 }
 
 .logoContainer {
@@ -55,10 +22,10 @@
 }
 
 .logoContainer a {
-  font-size: var(--font-size-2xl);
+  color: var(--color-text-primary);
+  font-size: var(--font-size-xl);
   font-weight: var(--font-weight-semibold);
   letter-spacing: var(--letter-spacing-tight);
-  color: var(--color-text-primary);
   text-decoration: none;
   transition: color var(--transition-fast);
 }
@@ -75,17 +42,134 @@
   letter-spacing: var(--letter-spacing-tight);
 }
 
+.desktopNav {
+  align-items: center;
+  display: none;
+  gap: 12px;
+}
+
+.desktopNav a {
+  color: var(--color-gray-700);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  position: relative;
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.desktopNav a:hover {
+  color: var(--color-text-primary);
+}
+
+.desktopNav a::after {
+  background-color: var(--color-primary);
+  bottom: -4px;
+  content: "";
+  height: 2px;
+  left: 0;
+  position: absolute;
+  transition: width var(--transition-normal);
+  width: 0;
+}
+
+.desktopNav a:hover::after {
+  width: 100%;
+}
+
+/* Hamburger button */
+.hamburger {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  height: 32px;
+  justify-content: center;
+  padding: 4px;
+  width: 32px;
+  z-index: 1001;
+}
+
+.hamburgerLine {
+  background-color: var(--color-text-primary);
+  display: block;
+  height: 2px;
+  transition: transform var(--transition-fast), opacity var(--transition-fast);
+  width: 100%;
+}
+
+.hamburgerLine.open:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.hamburgerLine.open:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburgerLine.open:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* Mobile nav */
+.mobileNav {
+  background-color: var(--color-background-elevated);
+  border-bottom: 1px solid var(--color-border);
+  display: flex;
+  flex-direction: column;
+  left: 0;
+  max-height: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  transition: max-height var(--transition-normal), padding var(--transition-normal);
+}
+
+.mobileNavOpen {
+  max-height: 300px;
+  padding: 16px;
+}
+
+.mobileNav a {
+  border-bottom: 1px solid var(--color-border);
+  color: var(--color-gray-700);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-medium);
+  padding: 12px 0;
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.mobileNav a:last-child {
+  border-bottom: none;
+}
+
+.mobileNav a:hover {
+  color: var(--color-text-primary);
+}
+
 /* Tablet and up */
-@media (min-width: 768px) {
+@media (width >= 768px) {
   .container {
     padding: 10px 32px;
   }
 
-  .container nav {
+  .hamburger {
+    display: none;
+  }
+
+  .mobileNav {
+    display: none;
+  }
+
+  .desktopNav {
+    display: flex;
     gap: 16px;
   }
 
-  .container nav a {
+  .desktopNav a {
     font-size: var(--font-size-base);
   }
 
@@ -99,12 +183,12 @@
 }
 
 /* Desktop and up */
-@media (min-width: 1024px) {
+@media (width >= 1024px) {
   .container {
     padding: 16px 64px;
   }
 
-  .container nav {
+  .desktopNav {
     gap: 32px;
   }
 

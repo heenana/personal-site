@@ -1,0 +1,92 @@
+.customSelect {
+  align-items: center;
+  display: flex;
+  gap: 8px;
+  position: relative;
+}
+
+.label {
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-medium);
+}
+
+.selectButton {
+  align-items: center;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid var(--color-text-secondary);
+  color: var(--color-text-primary);
+  cursor: pointer;
+  display: flex;
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-medium);
+  gap: 8px;
+  justify-content: space-between;
+  padding: 6px 10px;
+  transition: border-color var(--transition-fast);
+}
+
+.selectButton:hover {
+  border-bottom-color: var(--color-primary);
+}
+
+.selectButton:focus {
+  border-bottom-color: var(--color-primary);
+  outline: none;
+}
+
+.arrow {
+  font-size: 10px;
+  transition: transform var(--transition-fast);
+}
+
+.arrowUp {
+  transform: rotate(180deg);
+}
+
+.dropdown {
+  background: var(--color-background);
+  border: 1px solid var(--color-text-secondary);
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgb(0 0 0 / 10%);
+  list-style: none;
+  margin: 4px 0 0;
+  min-width: 120px;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  z-index: 100;
+}
+
+.option {
+  color: var(--color-text-primary);
+  cursor: pointer;
+  font-size: var(--font-size-base);
+  padding: 10px 16px;
+  transition: background-color var(--transition-fast);
+}
+
+.option:hover {
+  background-color: rgb(74 128 130 / 20%);
+  color: var(--color-text-primary);
+}
+
+.option:first-child {
+  border-radius: 4px 4px 0 0;
+}
+
+.option:last-child {
+  border-radius: 0 0 4px 4px;
+}
+
+.selected {
+  background-color: var(--color-recipe-heading);
+  color: var(--color-text-primary);
+}
+
+.selected:hover {
+  background-color: rgb(74 128 130 / 20%);
+  color: var(--color-text-primary);
+}

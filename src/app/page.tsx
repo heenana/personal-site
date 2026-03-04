@@ -1,4 +1,4 @@
-import About from '@/components/About';
+import Intro from '@/components/Intro';
 import styles from './page.module.css';
 import Header from '@/components/Header';
 
@@ -7,7 +7,7 @@ export default function Home() {
     <div className={styles.page}>
       <main className={styles.main}>
         <Header />
-        <About />
+        <Intro />
       </main>
     </div>
   );

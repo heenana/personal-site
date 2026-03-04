@@ -1,0 +1,131 @@
+.container {
+  background: var(--color-background);
+  min-height: 100vh;
+}
+
+.main {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 64px 32px;
+}
+
+.title {
+  color: var(--color-text-primary);
+  font-size: 48px;
+  font-weight: var(--font-weight-bold);
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.subtitle {
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-xl);
+  margin-bottom: 64px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 600px;
+  text-align: center;
+}
+
+.projectGrid {
+  display: grid;
+  gap: 32px;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
+
+.projectCard {
+  background: var(--color-background-elevated);
+  border: 1px solid var(--color-border);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+  transition: transform var(--transition-normal);
+}
+
+.projectCard:hover {
+  transform: translateY(-4px);
+}
+
+.cardHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.projectTitle {
+  color: var(--color-text-primary);
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-semibold);
+  margin: 0;
+}
+
+.company {
+  color: var(--color-primary);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+}
+
+.projectDescription {
+  color: var(--color-text-secondary);
+  flex-grow: 1;
+  line-height: var(--line-height-relaxed);
+  margin-bottom: 24px;
+}
+
+.technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.techTag {
+  background-color: var(--color-primary);
+  border-radius: 6px;
+  color: var(--color-background);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  padding: 6px 12px;
+}
+
+.cardFooter {
+  border-top: 1px solid var(--color-border);
+  display: flex;
+  gap: 24px;
+  padding-top: 16px;
+}
+
+.link {
+  color: var(--color-primary);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.link:hover {
+  color: var(--color-primary-hover);
+  text-decoration: underline;
+}
+
+@media (width <= 768px) {
+  .main {
+    padding: 32px 16px;
+  }
+
+  .title {
+    font-size: var(--font-size-3xl);
+  }
+
+  .subtitle {
+    font-size: var(--font-size-base);
+    margin-bottom: 32px;
+  }
+
+  .projectGrid {
+    gap: 24px;
+    grid-template-columns: 1fr;
+  }
+}

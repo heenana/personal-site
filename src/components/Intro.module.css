@@ -1,0 +1,95 @@
+.container {
+  align-items: center;
+  background: var(--color-background);
+  color: var(--color-text-primary);
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  gap: 48px;
+  justify-content: center;
+  padding: 48px;
+}
+
+.container h2 {
+  font-size: var(--font-size-5xl);
+  letter-spacing: var(--letter-spacing-normal);
+  margin-bottom: 12px;
+}
+
+.container p {
+  font-size: var(--font-size-base);
+  letter-spacing: var(--letter-spacing-normal);
+  line-height: var(--line-height-normal);
+  max-width: 500px;
+}
+
+.description {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+}
+
+.socialLinks {
+  display: flex;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.socialLink {
+  align-items: center;
+  background-color: var(--color-background-elevated);
+  border: 1px solid var(--color-border);
+  border-radius: 50%;
+  display: flex;
+  height: 24px;
+  justify-content: center;
+  transition: transform var(--transition-fast), opacity var(--transition-fast);
+  width: 24px;
+}
+
+.socialLink:hover {
+  opacity: 0.8;
+  transform: translateY(-2px);
+}
+
+/* GitHub icon - make it white */
+.socialLink:first-child img {
+  filter: brightness(0) invert(1);
+}
+
+.socialLink:last-child {
+  background-color: transparent;
+  border: none;
+}
+
+@media (width < 768px) {
+  .container {
+    flex-direction: column;
+    gap: 32px;
+    padding: 24px 16px;
+  }
+
+  .container h2 {
+    font-size: var(--font-size-2xl);
+    text-align: center;
+  }
+
+  .container p {
+    text-align: center;
+  }
+
+  .container > img {
+    height: 385px;
+    width: 275px;
+  }
+
+  .description {
+    align-items: center;
+    order: 1;
+  }
+
+  .socialLinks {
+    justify-content: center;
+  }
+}
