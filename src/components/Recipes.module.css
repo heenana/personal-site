@@ -1,0 +1,173 @@
+.container {
+  background: var(--color-background);
+  min-height: 100vh;
+}
+
+.main {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 64px 32px;
+}
+
+.main h1 {
+  color: var(--color-text-primary);
+  font-size: var(--font-size-4xl);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: 48px;
+  text-align: center;
+}
+
+.section {
+  margin-bottom: 64px;
+}
+
+.sectionHeader {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.section h2 {
+  color: var(--color-text-primary);
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-semibold);
+  margin-bottom: 24px;
+}
+
+.sectionHeader h2 {
+  margin-bottom: 0;
+}
+
+.filterContainer {
+  align-items: center;
+  display: flex;
+  gap: 8px;
+}
+
+.filterLabel {
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-medium);
+}
+
+.filterSelect {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid var(--color-text-secondary);
+  color: var(--color-text-primary);
+  cursor: pointer;
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-medium);
+  padding: 6px 10px;
+  transition: border-color var(--transition-fast);
+}
+
+.filterSelect:hover {
+  border-bottom-color: var(--color-primary);
+}
+
+.filterSelect:focus {
+  border-bottom-color: var(--color-primary);
+  outline: none;
+}
+
+.filterSelect option {
+  background: var(--color-background-elevated);
+  color: var(--color-text-primary);
+  padding: 8px;
+}
+
+/* Featured Grid - Always 3 columns */
+.featuredGrid {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* All Recipes Grid - Responsive */
+.allRecipesGrid {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* Card Styles */
+.featuredCard,
+.recipeCard {
+  aspect-ratio: 4 / 3;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  transition: transform var(--transition-fast);
+}
+
+.featuredCard:hover,
+.recipeCard:hover {
+  transform: translateY(-4px);
+}
+
+.imageWrapper {
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+
+.cardOverlay {
+  background: var(--color-overlay);
+  bottom: 16px;
+  left: 0;
+  padding: 12px;
+  position: absolute;
+  right: 0;
+}
+
+.recipeName {
+  color: var(--color-text-primary);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+  margin: 0;
+}
+
+/* Tablet */
+@media (width <= 968px) {
+  .featuredGrid,
+  .allRecipesGrid {
+    gap: 24px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .main {
+    padding: 50px;
+  }
+
+  .main h1 {
+    font-size: var(--font-size-3xl);
+  }
+
+  .section h2 {
+    font-size: var(--font-size-xl);
+  }
+}
+
+/* Mobile */
+@media (width <= 640px) {
+  .featuredGrid,
+  .allRecipesGrid {
+    gap: 20px;
+    grid-template-columns: 1fr;
+  }
+
+  .main h1 {
+    font-size: var(--font-size-2xl);
+    margin-bottom: 32px;
+  }
+
+  .section {
+    margin-bottom: 48px;
+  }
+
+  .recipeName {
+    font-size: var(--font-size-base);
+  }
+}
