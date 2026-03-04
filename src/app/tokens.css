@@ -4,29 +4,29 @@
   /* ===== COLORS ===== */
 
   /* Primary */
-  --color-primary: #2c5f6f;
-  --color-primary-hover: #234850;
-  --color-primary-dark: #1a3740;
+  --color-primary: #599692;
+  --color-primary-hover: #4a807c;
+  --color-primary-dark: #3d6b68;
 
   /* Neutral Grays */
-  --color-gray-900: #000000;
-  --color-gray-700: #2c3436;
-  --color-gray-600: #4a5759;
-  --color-gray-500: #6b7678;
-  --color-gray-300: #b8c9cd;
-  --color-gray-200: #d4e1e4;
-  --color-gray-100: #e8f4f8;
-  --color-gray-50: #f5fafb;
+  --color-gray-900: #dfe5ec;
+  --color-gray-700: #a8b2c0;
+  --color-gray-600: #7d8a9a;
+  --color-gray-500: #626c7d;
+  --color-gray-300: #3d4555;
+  --color-gray-200: #2a3144;
+  --color-gray-100: #384670;
+  --color-gray-50: #11172a;
 
   /* Semantic Colors */
-  --color-background: #a5cbd4;
-  --color-text-primary: #000000;
-  --color-text-secondary: #4a5759;
-  --color-border: #d4e1e4;
-  --color-accent-light: #c48fa6;
-  --color-overlay: #f5e6d3;
-  --color-recipe-heading: #4a8082;
-  /* --color-accent-light: #d4a5b3; */
+  --color-background: #1a1a1a;
+  --color-background-elevated: #252525;
+  --color-text-primary: #dfe5ec;
+  --color-text-secondary: #a8b2c0;
+  --color-border: #333;
+  --color-accent-light: #599692;
+  --color-overlay: rgb(37 37 37 / 95%);
+  --color-recipe-heading: #599692;
 
   /* ===== TYPOGRAPHY ===== */
 
