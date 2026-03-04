@@ -16,21 +16,6 @@ const Contact: FC = () => (
 
       <div className={styles.content}>
         <div className={styles.contactInfo}>
-          {/* <div className={styles.infoCard}>
-              <div className={styles.icon}>📧</div>
-              <h3>Email</h3>
-              <a
-                className={styles.link}
-              >
-              </a>
-            </div> */}
-
-          {/* <div className={styles.infoCard}>
-              <div className={styles.icon}>📱</div>
-              <h3>Phone</h3>
-              </a>
-            </div> */}
-
           <div className={styles.infoCard}>
             <div className={styles.icon}>📍</div>
             <h2>Location</h2>
