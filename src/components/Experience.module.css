@@ -195,13 +195,10 @@
   }
 
   .cardMeta {
-    align-items: center;
+    align-items: flex-start;
     align-self: flex-start;
-    flex-direction: row;
-  }
-
-  .location {
-    order: 2;
+    flex-direction: column;
+    gap: 4px;
   }
 
   .period {

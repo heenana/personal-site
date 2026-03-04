@@ -210,6 +210,11 @@
     margin-bottom: 32px;
   }
 
+  .infoCard,
+  .socialLinks {
+    padding: 20px;
+  }
+
   .form {
     padding: 24px;
   }

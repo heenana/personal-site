@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import styles from './Intro.module.css';
 import { FC } from 'react';
+import { GITHUB_URL, LINKEDIN_URL } from '@/constants';
 
 const ASPECT_RATIO = 80;
 
@@ -17,7 +18,7 @@ const Intro: FC = () => (
         <a
           aria-label="GitHub"
           className={styles.socialLink}
-          href="https://github.com/heenanarottam"
+          href={GITHUB_URL}
           rel="noopener noreferrer"
           target="_blank"
         >
@@ -26,7 +27,7 @@ const Intro: FC = () => (
         <a
           aria-label="LinkedIn"
           className={styles.socialLink}
-          href="https://linkedin.com/in/heenanarottam"
+          href={LINKEDIN_URL}
           rel="noopener noreferrer"
           target="_blank"
         >

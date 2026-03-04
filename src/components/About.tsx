@@ -3,6 +3,27 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { FC } from 'react';
 
+const SKILLS = [
+  'JavaScript',
+  'TypeScript',
+  'React',
+  'Redux',
+  'Next.js',
+  'Material UI',
+  'HTML5/CSS3',
+  'SASS/SCSS',
+  'Storybook',
+  'Jest',
+  'Cypress',
+  'GraphQL',
+  'Python',
+  'Node.js',
+  'PostgreSQL',
+  'AWS',
+  'Docker',
+  'Kubernetes',
+];
+
 const About: FC = () => (
   <div className={styles.container}>
     <main className={styles.main}>
@@ -56,24 +77,11 @@ const About: FC = () => (
           <div className={styles.skills}>
             <h3>Skills & Technologies</h3>
             <div className={styles.skillTags}>
-              <span className={styles.tag}>JavaScript</span>
-              <span className={styles.tag}>TypeScript</span>
-              <span className={styles.tag}>React</span>
-              <span className={styles.tag}>Redux</span>
-              <span className={styles.tag}>Next.js</span>
-              <span className={styles.tag}>Material UI</span>
-              <span className={styles.tag}>HTML5/CSS3</span>
-              <span className={styles.tag}>SASS/SCSS</span>
-              <span className={styles.tag}>Storybook</span>
-              <span className={styles.tag}>Jest</span>
-              <span className={styles.tag}>Cypress</span>
-              <span className={styles.tag}>GraphQL</span>
-              <span className={styles.tag}>Python</span>
-              <span className={styles.tag}>Node.js</span>
-              <span className={styles.tag}>PostgreSQL</span>
-              <span className={styles.tag}>AWS</span>
-              <span className={styles.tag}>Docker</span>
-              <span className={styles.tag}>Kubernetes</span>
+              {SKILLS.map((skill) => (
+                <span key={skill} className={styles.tag}>
+                  {skill}
+                </span>
+              ))}
             </div>
           </div>
         </div>

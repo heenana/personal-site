@@ -39,8 +39,6 @@
 
 .imagePlaceholder {
   align-items: center;
-  aspect-ratio: 1;
-  background: var(--color-primary);
   border-radius: 16px;
   color: white;
   display: flex;

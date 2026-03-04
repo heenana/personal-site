@@ -4,6 +4,7 @@ import styles from './Contact.module.css';
 import Image from 'next/image';
 import ContactForm from '@/components/ContactForm';
 import { FC } from 'react';
+import { GITHUB_URL, LINKEDIN_URL } from '@/constants';
 
 const Contact: FC = () => (
   <div className={styles.container}>
@@ -27,7 +28,7 @@ const Contact: FC = () => (
             <div className={styles.socials}>
               <a
                 className={styles.socialLink}
-                href="https://github.com/heenana"
+                href={GITHUB_URL}
                 rel="noopener noreferrer"
                 target="_blank"
               >
@@ -36,7 +37,7 @@ const Contact: FC = () => (
               </a>
               <a
                 className={styles.socialLink}
-                href="https://linkedin.com/in/heena-narottam"
+                href={LINKEDIN_URL}
                 rel="noopener noreferrer"
                 target="_blank"
               >
