@@ -8,22 +8,21 @@ const eslintConfig = defineConfig([
   globalIgnores(['.next/**', 'out/**', 'build/**', 'next-env.d.ts']),
   {
     rules: {
-      // Enforce single quotes
       quotes: [
         'error',
         'single',
-        { avoidEscape: true, allowTemplateLiterals: true },
+        { allowTemplateLiterals: true, avoidEscape: true },
       ],
-      'sort-keys': ['warn', 'asc', { caseSensitive: false, natural: true }],
       'react/jsx-sort-props': [
         'error',
         {
           callbacksLast: true,
-          shorthandFirst: true,
           noSortAlphabetically: false,
           reservedFirst: true,
+          shorthandFirst: true,
         },
       ],
+      'sort-keys': ['warn', 'asc', { caseSensitive: false, natural: true }],
     },
   },
 ]);
