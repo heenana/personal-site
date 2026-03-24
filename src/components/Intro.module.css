@@ -80,16 +80,23 @@
   }
 
   .container > img {
-    height: 385px;
-    width: 275px;
+    height: 315px;
+    width: 225px;
   }
 
   .description {
     align-items: center;
     order: 1;
+    padding: 4px;
   }
 
   .socialLinks {
     justify-content: center;
+  }
+}
+
+@media (width < 450px) {
+  .container {
+    justify-content: normal;
   }
 }

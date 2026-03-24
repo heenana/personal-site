@@ -7,7 +7,7 @@ export const sugarBeans: Recipe = {
   featured: true,
   id: 'sugar-beans',
   ingredients: [
-    '2 cups dried sugar beans (or pinto beans)',
+    '2 cups dried sugar beans (or pinto or kidney beans)',
     '1 large onion, diced',
     '3 cloves garlic, minced',
     '2 tablespoons oil',

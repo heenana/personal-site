@@ -203,6 +203,7 @@
 
   .period {
     align-self: flex-start;
+    margin-bottom: 8px;
   }
 
   .position {

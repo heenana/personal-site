@@ -34,9 +34,9 @@ const About: FC = () => (
           <div className={styles.imagePlaceholder}>
             <Image
               alt="Profile"
+              className={styles.profileImage}
               height={365}
               src="/images/about.jpg"
-              style={{ borderRadius: '16px' }}
               width={365}
             />
           </div>

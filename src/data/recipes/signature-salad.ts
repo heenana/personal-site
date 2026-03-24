@@ -15,7 +15,7 @@ export const heenasSignatureSalad: Recipe = {
     '1/2 cup walnuts, roughly chopped',
     '1/3 cup black olives, sliced or whole',
     {
-      link: '/recipes/curry-vinaigrette',
+      link: '/recipes/curry-vinaigrette-dressing',
       name: 'Curry vinaigrette dressing (to taste)',
     },
   ],

@@ -51,7 +51,7 @@ const Projects: FC = () => (
     <main className={styles.main}>
       <h1 className={styles.title}>Key Projects</h1>
       <p className={styles.subtitle}>
-        Highlights of impactful projects I&apos;ve led throughout my career.
+        A selection of impactful projects throughout my career.
       </p>
 
       <div className={styles.projectGrid}>

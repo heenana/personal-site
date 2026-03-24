@@ -48,6 +48,12 @@
   width: 100%;
 }
 
+.profileImage {
+  border-radius: 16px;
+  height: auto;
+  width: 100%;
+}
+
 .textSection {
   color: var(--color-gray-700);
   line-height: var(--line-height-loose);
@@ -118,6 +124,11 @@
 
   .title {
     font-size: var(--font-size-3xl);
+    margin-bottom: 16px;
+  }
+
+  .imagePlaceholder {
+    max-width: 300px;
   }
 
   .textSection h2 {
